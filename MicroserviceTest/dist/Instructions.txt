@@ -1,0 +1,15 @@
+This program reads through an XML file with a list of all agent details for a Dynatrace server.
+You can create this file by navigating to following URL:
+
+https://<server address>:8021/rest/management/agents
+
+Save the output from this somewhere on your computer as an xml file then run the command:
+
+
+java -jar LicenseCounter.jar <xml file name>
+
+
+This will then create a .csv file and a .txt file.
+the .csv file can be edited with excel. This file shows the number of each type of agent per system profile.
+
+the .txt file will list each agent name, its heap size, its agent group, and the total number of microservice jvms for each system profile.
